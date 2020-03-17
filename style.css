@@ -41,3 +41,43 @@ body {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
+
+/* ICON BAR */
+.nav-bar {
+  width: 70px;
+  left: 1rem;
+  position: absolute;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #111;
+}
+
+.nav-bar a {
+  display: block;
+  padding: 16px;
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-bar a:hover {
+  cursor: pointer;
+  border-radius: 10px;
+  color: #111;
+  background-color: rgba(255, 255, 255, 0.868);
+}
+
+.hide {
+  display: none;
+  transition: all 0.5 ease;
+}
+
+.active {
+  border-radius: 10px;
+  background-color: #4caf50;
+}
