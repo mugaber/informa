@@ -113,3 +113,38 @@ body {
   padding: 5px;
   background-color: #333;
 }
+
+/* DATE AND TIME */
+.date-time {
+  margin: 10px;
+  padding: 10px;
+  width: 70%;
+  text-align: center;
+
+  color: #17d4fe;
+  font-size: 100px;
+  letter-spacing: 10px;
+
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #111;
+
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#date {
+  margin: 10px;
+  padding: 10px;
+  font-size: 90%;
+  font-weight: 800;
+  font-family: 'Antic Didone', serif;
+}
+
+#time {
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Orbitron', sans-serif;
+}

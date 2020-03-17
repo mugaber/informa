@@ -19,7 +19,20 @@ const openTab = (event, tabName) => {
 }
 
 //
+const displayCurrentTime = () => {
+  const newDate = new Date()
+  const currentTime = newDate.toLocaleTimeString()
+  const currentDate = newDate.toDateString()
+
+  document.getElementById('date').innerHTML = currentDate
+  document.getElementById('time').innerHTML = currentTime
+
+  setTimeout(displayCurrentTime, 1000)
+}
+
+//
 const main = () => {
+  displayCurrentTime()
   document.getElementById('default-tab').click()
 }
 
