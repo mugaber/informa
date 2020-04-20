@@ -1,4 +1,4 @@
 # Informa
 
-### Weather infro
+### Weather info
 ### Date and time
