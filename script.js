@@ -48,6 +48,14 @@ const getFormDetails = () => {
   return dropForm
 }
 
+const redirectRequest = () => {
+  const formDetails = getFormDetails()
+
+  if (formDetails.title === 'drop') {
+    return window.location.pathname = 'drop'
+  }
+}
+
 //
 const main = () => {
   displayCurrentTime()
