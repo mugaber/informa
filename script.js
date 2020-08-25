@@ -46,8 +46,17 @@ const getFormDetails = (formType) => {
   }
 
   const audit = {}
+  const exception = {}
 
   return formType === 'drop' ? dropForm : formType === 'withdraw' ? withdrawForm : null
+}
+
+const redirectRequest = () => {
+  const formDetails = getFormDetails()
+
+  if (formDetails.title === 'drop') {
+    return window.location.pathname = 'drop'
+  }
 }
 
 //
