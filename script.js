@@ -30,6 +30,26 @@ const displayCurrentTime = () => {
   setTimeout(displayCurrentTime, 1000)
 }
 
+const getFormDetails = (formType) => {
+  const dropForm = {
+    title: 'drop',
+    firstSection: 'first section',
+    secondSection: 'second section'
+
+  }
+
+  const withdrawForm = {
+    title: 'withdraw',
+    firstSection: 'first section',
+    secondSection: 'second section'
+
+  }
+
+  const audit = {}
+
+  return formType === 'drop' ? dropForm : formType === 'withdraw' ? withdrawForm : null
+}
+
 //
 const main = () => {
   displayCurrentTime()
