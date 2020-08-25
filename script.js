@@ -30,6 +30,32 @@ const displayCurrentTime = () => {
   setTimeout(displayCurrentTime, 1000)
 }
 
+const getFormDetails = () => {
+  const dropForm = {
+    title: 'drop',
+    firstSection: 'first section',
+    secondSection: 'second section'
+
+  }
+
+  const dropForm = {
+    title: 'withdraw',
+    firstSection: 'first section',
+    secondSection: 'second section'
+
+  }
+
+  return dropForm
+}
+
+const redirectRequest = () => {
+  const formDetails = getFormDetails()
+
+  if (formDetails.title === 'drop') {
+    return window.location.pathname = 'drop'
+  }
+}
+
 //
 const main = () => {
   displayCurrentTime()
